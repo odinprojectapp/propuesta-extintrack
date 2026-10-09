@@ -330,7 +330,9 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
       No necesita instalar nada ni tener usuario.</span>
       <small>Público: código, tipo, capacidad, serial, ubicación o vehículo,
       estado, fechas e historial con el inspector abreviado («Carlos I.»).
-      Nunca: fotos, observaciones, teléfonos ni correos.</small></li>
+      Nunca: fotos, observaciones, teléfonos ni correos. Los campos públicos
+      se confirman con ustedes antes de la entrega; si prefieren ocultar
+      alguno, como el serial, se ajusta sin costo.</small></li>
     <li><b>10 · Tablero de avance</b><span>Porcentaje inspeccionado en el mes,
       extintores por vencer en 30 días, vencidos y hallazgos abiertos, por
       mina y por área. Cada cifra lleva directamente a la lista filtrada.</span></li>
@@ -427,10 +429,21 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
   </table>
   </div>
   <ul class="cond">
+    <li><div><b>Quién prueba y quién aprueba.</b>
+      <span>Hago las pruebas junto con la persona que <span class="vk-font">VERTIKAL</span> designe, y
+      esa persona las aprueba.</span></div></li>
+    <li><div><b>Si algo falla.</b>
+      <span>Se anota en el acta: qué prueba, qué pasó y una captura. Lo
+      corrijo en máximo cinco días hábiles y se repiten solo las pruebas
+      afectadas.</span></div></li>
     <li><div><b>Acta de aceptación.</b>
-      <span>Cuando las pruebas pasan, se firma un acta. Si en los cinco días
-      hábiles siguientes a la prueba no hay observaciones por escrito, la
-      entrega se entiende aceptada.</span></div></li>
+      <span>Con las pruebas superadas se firma el acta. Si en los cinco días
+      hábiles siguientes la persona designada no firma ni envía
+      observaciones por escrito, la entrega se entiende aceptada.</span></div></li>
+    <li><div><b>Si faltan datos o accesos.</b>
+      <span>Los plazos corren desde que reciba el inventario, los usuarios y
+      los accesos. Si pasados 30 días no han llegado, las pruebas se hacen
+      con datos de demostración.</span></div></li>
     <li><div><b>Defecto o petición nueva.</b>
       <span>Si una prueba no da el resultado esperado, es un defecto y lo
       corrijo sin costo. Si lo que se pide es algo distinto a lo descrito
@@ -478,7 +491,7 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
   <ul class="garantias">
     <li><b>El código fuente completo</b>, en un repositorio con todo su historial de cambios.</li>
     <li><b>La base de datos</b> con su estructura, reglas de seguridad y scripts de instalación.</li>
-    <li><b>Instalación</b> en el servidor que ustedes elijan.</li>
+    <li><b>Instalación</b> en el servidor que ustedes elijan, con el respaldo de la base de datos activo y la <b>copia semanal de fotos</b> programada.</li>
     <li><b>Dominio propio por un año</b>, registrado a nombre de VERTIKAL (por ejemplo extintores-vertikal.com.co), con su certificado de seguridad. Desde el segundo año la renovación corre por su cuenta: unos $100.000 al año, y les aviso con tiempo.</li>
     <li><b>Configuración inicial:</b> minas, áreas, tipos de extintor, usuarios y su logo en los PDF.</li>
     <li><b>Carga del inventario</b> actual a partir de la plantilla de Excel.</li>
@@ -536,10 +549,14 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
       <span>Según el volumen de inspecciones, se acumulan decenas de GB de
       fotos al año. El plan de nube recomendado incluye 100 GB y cada GB
       adicional cuesta centavos de dólar al mes.</span></div></li>
-    <li><div><b>Respaldos.</b>
-      <span>En la nube administrada son diarios y automáticos. En servidor
-      propio, los programo en la instalación, pero vigilarlos queda a cargo
-      de ustedes.</span></div></li>
+    <li><div><b>Respaldos: base de datos y fotos van por separado.</b>
+      <span>En la nube recomendada, la base de datos se respalda sola cada
+      día y el proveedor guarda 7 días. Las fotos no entran en ese
+      respaldo: en la instalación dejo programada una copia semanal de las
+      fotos en un almacenamiento aparte a nombre de ustedes (unos USD 1&ndash;5
+      al mes). En servidor propio programo las dos copias. Vigilar que se
+      hagan y probar la restauración queda a cargo de ustedes, o dentro del
+      plan de mantenimiento.</span></div></li>
     <li><div><b>Cambiar de servidor después.</b>
       <span>Se puede. La primera instalación está incluida; una mudanza
       posterior se cotiza por horas.</span></div></li>
@@ -578,6 +595,14 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
     <li><div><b>Soporte.</b>
       <span>Ayuda de uso, diagnóstico y acompañamiento: las 10 horas incluidas
       y, después, las modalidades de abajo.</span></div></li>
+    <li><div><b>Mantenimiento.</b>
+      <span>Actualizar librerías y parches de seguridad, revisar respaldos y
+      cuidar el servidor. Después de la garantía es opcional: plan mensual
+      o por horas.</span></div></li>
+    <li><div><b>Fallas de terceros.</b>
+      <span>Caídas o cambios del proveedor de nube, del correo o de internet.
+      Les ayudo a diagnosticarlas, pero no son defectos del software y se
+      atienden como soporte.</span></div></li>
     <li><div><b>Desarrollo nuevo.</b>
       <span>Funciones o cambios que no están en esta propuesta. Se cotizan
       antes de hacerlos.</span></div></li>
@@ -598,7 +623,7 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
       <tr><td>Bolsa de 10 horas</td><td>Prepagadas, vigentes 6 meses</td><td class="num">$900.000</td></tr>
       <tr><td>Bolsa de 20 horas</td><td>Prepagadas, vigentes 6 meses</td><td class="num">$1.700.000</td></tr>
       <tr><td>Bolsa de 40 horas</td><td>Prepagadas, vigentes 6 meses</td><td class="num">$3.200.000</td></tr>
-      <tr><td>Plan de mantenimiento</td><td>Actualizaciones de seguridad, revisión de respaldos, monitoreo y hasta 4 horas de soporte al mes</td><td class="num">$500.000 / mes</td></tr>
+      <tr><td>Plan de mantenimiento</td><td>Actualizaciones de seguridad, revisión de respaldos, prueba de restauración cada seis meses, monitoreo y hasta 4 horas de soporte al mes</td><td class="num">$500.000 / mes</td></tr>
     </tbody>
   </table>
   </div>
@@ -608,11 +633,13 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
   <span class="eyebrow">Opción A &middot; Reglas del acuerdo</span>
   <h2>Para que no haya<br>malentendidos</h2>
   <ul class="cond">
-    <li><div><b>La cesión se hace por escrito al completar el pago.</b>
-      <span>Con el último pago firmo la cesión de los derechos patrimoniales
-      sobre el código hecho para <span class="vk-font">VERTIKAL</span>. Pueden usarlo, modificarlo y
-      registrarlo ante la Dirección Nacional de Derecho de Autor si
-      quieren. Mientras tanto tienen licencia de uso completa.</span></div></li>
+    <li><div><b>Cierre en un solo acto.</b>
+      <span>Contra el pago final, en la misma reunión: entrego el código y la
+      documentación, firmo la cesión de los derechos patrimoniales y
+      firmamos el acta de recibido. Desde ahí pueden usar el código,
+      modificarlo y registrarlo ante la Dirección Nacional de Derecho de
+      Autor si quieren. Mientras no se haga el pago final no hay cesión,
+      pero la aplicación sigue funcionando con licencia de uso.</span></div></li>
     <li><div><b>Qué se cede y qué no.</b>
       <span>Se cede el código hecho para ExtinTrack. Mis componentes
       genéricos se licencian para usarlos dentro de ExtinTrack. Las
@@ -620,14 +647,16 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
       configuración (inventario, usuarios, inspecciones, fotos) siempre
       fueron y siguen siendo de <span class="vk-font">VERTIKAL</span>.</span></div></li>
     <li><div><b>Lo que conservo.</b>
-      <span>El reconocimiento como autor, que la ley no permite ceder; mis
-      componentes genéricos, que les quedan con licencia perpetua y gratuita
-      para usarlos dentro de ExtinTrack; y la experiencia ganada, sin
-      revelar información suya.</span></div></li>
+      <span>El reconocimiento como autor, que la ley no permite ceder, y mis
+      utilidades de uso general: compresión de fotos, cola de envío sin
+      señal, generación de PDF y Excel y componentes visuales básicos. Les
+      quedan con licencia perpetua y gratuita para usarlas dentro de
+      ExtinTrack.</span></div></li>
     <li><div><b>No revendo su aplicación.</b>
       <span>No vendo esta aplicación con sus datos ni su configuración a
-      otra empresa. Sí puedo desarrollar soluciones parecidas para otros
-      clientes.</span></div></li>
+      otra empresa. Puedo desarrollar soluciones parecidas para otros
+      clientes, pero eso nunca me autoriza a usar o mostrar sus datos, su
+      configuración, su marca ni su documentación privada.</span></div></li>
     <li><div><b>Librerías de código abierto.</b>
       <span>La aplicación usa librerías libres (Next.js, PostgreSQL y otras),
       que siguen bajo sus propias licencias gratuitas. No generan ningún
@@ -647,9 +676,14 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
     <li><div><b>Confidencialidad.</b>
       <span>Ambas partes guardan reserva sobre la información de la otra
       durante dos años después de terminar.</span></div></li>
-    <li><div><b>Si cancelan a mitad.</b>
-      <span>Lo pagado cubre el trabajo hecho hasta ese punto y no se
-      devuelve. La cesión solo aplica con el pago completo.</span></div></li>
+    <li><div><b>Si cancelan antes de terminar.</b>
+      <span>Antes de la instalación, el primer pago cubre la configuración,
+      la carga del inventario y la agenda reservada. Después de la
+      instalación, lo pagado cubre lo instalado y la capacitación hecha.
+      En ambos casos no hay reembolso, no se entregan el código ni la
+      cesión (requieren el pago completo), y les exporto sus datos y fotos
+      en un máximo de 10 días hábiles. Las cuentas de servidor ya están a
+      su nombre.</span></div></li>
   </ul>
 </section>
 
@@ -708,6 +742,12 @@ figcaption{margin-top:10px;font-family:var(--mono);font-size:.72rem;
     compra sale mejor. Si prefieren no ocuparse de servidores, respaldos ni
     actualizaciones, la licencia es más cómoda y arranca con mucho menos
     dinero.
+  </p>
+  <p class="nota">
+    <b>Ojo: es una comparación de pagos, no del costo total.</b> En la
+    compra hay que sumar el servidor (unos USD 45&ndash;65 al mes en la nube,
+    según el uso) y el soporte o mantenimiento que contraten. En la
+    licencia eso ya está incluido.
   </p>
 </section>
 
